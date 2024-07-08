@@ -232,11 +232,11 @@
 
         if (valid) {
           $('.message').addClass('success').text('Анкету надіслано!')
-          $('.messageBackground').addClass('success')
 
           setTimeout(function () {
             window.location.href = './'
-          }, 5000)
+          }, 3000)
+        } else {
         }
       })
     })
@@ -608,15 +608,10 @@
                           >
                             Отправить анкету
                           </button>
-                          <div class="messageBackgound">
-                            <div class="message"></div>
-                          </div>
+
+                          <div class="message"></div>
 
                           <style>
-                            .messageBackground {
-                              display: none;
-                            }
-
                             .success {
                               position: fixed;
                               top: 0;
@@ -628,16 +623,9 @@
                               align-items: center;
                               background-color: rgba(0, 0, 0, 0.262);
                             }
-
                             .message {
-                              max-width: 800px;
-                              height: 300px;
-                              width: 100%;
-                              display: flex;
-                              align-items: center;
-                              justify-content: center;
-                              border-radius: 20px;
-                              background-color: #ffffff;
+                              color: rgb(255, 255, 255);
+                              font-size: 4rem;
                             }
                             .btn.f-btn.button-sm {
                               padding-left: 35px;
